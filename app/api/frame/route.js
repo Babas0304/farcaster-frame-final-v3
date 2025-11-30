@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 
 // 🚨 GANTI URL placeholder ini dengan URL Vercel LIVE Anda setelah deployment pertama!
-const NEXT_PUBLIC_URL = 'https://YOUR_VERCEL_DOMAIN.vercel.app'; 
+const NEXT_PUBLIC_URL = 'https://farcaster-frame-final-v3-ubju.vercel.app'; 
 
 // Sintaks sudah diperbaiki (menghapus deklarasi tipe data TypeScript)
 export async function POST(req) {
