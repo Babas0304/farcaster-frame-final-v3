@@ -1,8 +1,7 @@
 // app/page.js
 
 // 🚨 GANTI URL placeholder ini dengan URL Vercel LIVE Anda setelah deployment pertama!
-const NEXT_PUBLIC_URL = 'https://YOUR_VERCEL_DOMAIN.vercel.app'; 
-
+const NEXT_PUBLIC_URL = 'https://farcaster-frame-final-v3-ubju.vercel.app';
 // FUNGSI INI SUDAH DIKOREKSI SINTAKSNYA
 export async function generateMetadata() {
   const frameMetadata = {
