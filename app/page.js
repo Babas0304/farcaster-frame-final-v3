@@ -1,10 +1,10 @@
 // app/page.js
-import { Metadata } from 'next';
 
-// GANTI URL placeholder ini dengan URL Vercel LIVE Anda setelah deployment
+// 🚨 GANTI URL placeholder ini dengan URL Vercel LIVE Anda setelah deployment pertama!
 const NEXT_PUBLIC_URL = 'https://YOUR_VERCEL_DOMAIN.vercel.app'; 
 
-export async function generateMetadata(): Promise<Metadata> {
+// FUNGSI INI SUDAH DIKOREKSI SINTAKSNYA
+export async function generateMetadata() {
   const frameMetadata = {
     'fc:frame': 'vNext',
     'fc:frame:image': `${NEXT_PUBLIC_URL}/api/image?text=Welcome%20to%20my%20Farcaster%20Frame!`,
@@ -29,7 +29,6 @@ export default function Page() {
     <div style={{ padding: '20px', textAlign: 'center' }}>
       <h1>Farcaster Frame is Live!</h1>
       <p>This is the web view. The Frame metadata is in the source code.</p>
-      <p>Post the URL in Farcaster to see the Frame in action.</p>
     </div>
   );
 }
