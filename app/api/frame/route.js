@@ -1,10 +1,11 @@
 // app/api/frame/route.js
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
-// GANTI URL placeholder ini dengan URL Vercel LIVE Anda setelah deployment
+// 🚨 GANTI URL placeholder ini dengan URL Vercel LIVE Anda setelah deployment pertama!
 const NEXT_PUBLIC_URL = 'https://YOUR_VERCEL_DOMAIN.vercel.app'; 
 
-export async function POST(req: NextRequest): Promise<Response> {
+// Sintaks sudah diperbaiki (menghapus deklarasi tipe data TypeScript)
+export async function POST(req) {
   try {
     const body = await req.json();
     const buttonIndex = body.untrustedData.buttonIndex;
@@ -12,6 +13,7 @@ export async function POST(req: NextRequest): Promise<Response> {
     let imageUrl;
     let buttonText;
 
+    // Logika ketika tombol diklik
     if (buttonIndex === 1) {
       imageUrl = `${NEXT_PUBLIC_URL}/api/image?text=You%20clicked%20the%20button!`;
       buttonText = 'Clicked!';
@@ -20,6 +22,7 @@ export async function POST(req: NextRequest): Promise<Response> {
       buttonText = 'Try Again';
     }
 
+    // Merespons dengan Frame HTML yang BARU
     const frameHtml = `
       <!DOCTYPE html>
       <html>
